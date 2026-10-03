@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka:wght@400;600&display=swap");
+
+body {
+  font-family: "Fredoka", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #2b1d14;
+  margin: 0;
+  padding: 0 20px;
+
+  background-color: #ffd23f;
+  background-image: radial-gradient(#f4b400 3px, transparent 3px);
+  background-size: 28px 28px;
+}
+
+header, main, footer {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 36px 0 10px;
+}
+
+h1 {
+  font-family: "Bangers", Impact, sans-serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  line-height: 1.05;
+  margin: 0 0 10px;
+  color: #d62828;
+  text-shadow: 3px 3px 0 #2b1d14;
+  transform: rotate(-2deg);
+}
+
+.sub {
+  font-weight: 600;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Bangers", Impact, sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  margin: 8px 0;
+  color: #d62828;
+}
+
+/* IMAGEM */
+figure {
+  margin: 28px 0;
+  background: #ffffff;
+  padding: 14px 14px 10px;
+  border: 4px solid #2b1d14;
+  box-shadow: 8px 8px 0 #2b1d14;
+  transform: rotate(1.5deg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 3px solid #2b1d14;
+  animation: suspeito 3s ease-in-out infinite;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+@keyframes suspeito {
+  0%, 100% { transform: rotate(0deg); }
+  50%      { transform: rotate(-1.5deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img { animation: none; }
+}
+
+section {
+  background: #fff8e1;
+  border: 3px solid #2b1d14;
+  box-shadow: 5px 5px 0 #2b1d14;
+  padding: 10px 22px 16px;
+  margin: 26px 0;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 8px 0 0;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+blockquote {
+  margin: 12px 0;
+  padding: 8px 14px;
+  border-left: 6px solid #d62828;
+  background: #ffffff;
+  font-style: italic;
+}
+
+.nota {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 8px 0 0;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 10px 0 40px;
+}
